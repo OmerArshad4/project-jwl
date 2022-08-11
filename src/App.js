@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
+import Success from "./pages/Success";
 import Cart from "./pages/Cart";
 import Mens from "./pages/Products/Mens";
 import Womens from "./pages/Products/Womens";
@@ -34,6 +35,7 @@ const App = () => {
               <Route exact path="/" element={<HomePage />} />
               <Route exact path="/explore" element={<Categories />} />
               <Route exact path="/login" element={<Login />} />
+              <Route exact path="/success" element={<Success />} />
               <Route exact path="/cart" element={<Cart />} />
               <Route exact path="/checkout" element={<Checkout />} />
               <Route exact path="/shop/mens" element={<Mens />} />
